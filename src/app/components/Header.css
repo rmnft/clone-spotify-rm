@@ -1,0 +1,83 @@
+.hdr {
+  background-color: #1db954;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hdr-lft {
+  display: flex;
+  align-items: center;
+}
+
+.hdr-rgt {
+  display: flex;
+  align-items: center;
+}
+
+.hdr-btn {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1rem;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hdr-btn:hover {
+  opacity: 0.8;
+}
+
+.usr-prfl {
+  position: relative;
+}
+
+.usr-info {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.usr-nm {
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+.usr-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.drpdwn-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #1db954;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  z-index: 100;
+}
+
+.drpdwn-item {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.drpdwn-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}

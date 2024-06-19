@@ -1,0 +1,85 @@
+.planosContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.planosContent {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planosTitle {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.planosCardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.planosCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.planosCardTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.planosCardDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.planosButton {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.planosButton:hover {
+  background-color: #2980b9;
+}
+
+.confirmationMessage {
+  background-color: #dff0d8;
+  color: #3c763d;
+  border: 1px solid #d6e9c6;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.confirmationMessage p {
+  margin-bottom: 10px;
+}
+
+.confirmationMessage .planosButton {
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.confirmationMessage .planosButton:hover {
+  background-color: #4cae4c;
+}

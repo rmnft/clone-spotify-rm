@@ -1,0 +1,71 @@
+/* Fundo e contêiner principal */
+html,body {
+  margin: 0;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1db954 30%, #121212 100%);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Título da página */
+.home-title {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Grupo de botões */
+.button-group {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo dos botões */
+.home-button {
+  display: inline-block;
+  padding: 12px 25px;
+  font-size: 1.2em;
+  color: #fff;
+  background: #1db954;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s, box-shadow 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: #17a24a;
+  box-shadow: 0 0 10px rgba(23, 162, 74, 0.5);
+}
+
+/* Efeito de foco no botão */
+.home-button:focus {
+  outline: none;
+  background: #159b43;
+  box-shadow: 0 0 15px rgba(21, 155, 67, 0.7);
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .home-title {
+    font-size: 2em;
+  }
+
+  .home-button {
+    font-size: 1em;
+    padding: 10px 20px;
+  }
+}
