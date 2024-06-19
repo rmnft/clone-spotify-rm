@@ -9,13 +9,6 @@ import withAuth from "../withAuth";
 import Header from "../components/Header";
 
 // Movendo a configuração do SearchClient para dentro da função
-const createSearchClient = () => {
-  return new SearchClient(
-    "https://pesquisaspotify.search.windows.net", // Endpoint do seu serviço de busca
-    "index", // Nome do índice
-    new AzureKeyCredential("nNorGr6wisaKe53M3yK0wWmgr2Oe8j17kzzZVXFiQBAzSeAJjz9C") // Chave de administração do serviço de busca
-  );
-};
 
 const Artistas = () => {
   const [bandas, setBandas] = useState([]);
