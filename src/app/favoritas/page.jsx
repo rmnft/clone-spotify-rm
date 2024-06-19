@@ -14,10 +14,7 @@
       const fetchUserData = async () => {
         try {
           const token = localStorage.getItem("token");
-          if (!token) {
-            router.push("/login");
-            return;
-          }
+          
 
           const response = await axios.get("https://clonespotify.azurewebsites.net/usuario/me", {
             headers: {
