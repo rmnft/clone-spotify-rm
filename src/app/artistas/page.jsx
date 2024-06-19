@@ -22,10 +22,7 @@ const Artistas = () => {
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    if (!token) {
-      router.push("/login");
-      return;
-    }
+   
 
     const fetchUserData = async () => {
       try {
@@ -171,4 +168,4 @@ const Artistas = () => {
   );
 };
 
-export default withAuth(Artistas);
+export default Artistas;
